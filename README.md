@@ -136,11 +136,6 @@ O comando `git commit -m "Escreva uma mensagem aqui"` cria um novo commit com as
 6. Uma vez que o seu repositório foi criado e os arquivos foram enviados para o GitHub remoto, acesse o site github.com e verifique se o seu repositório e os arquivos criados estão lá.
 
 ## Contribuindo
-Contribuições são bem-vindas! Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
-## Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
-
-## Contribuindo
 
 Contribuições são bem-vindas! Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para mais detalhes.
 
