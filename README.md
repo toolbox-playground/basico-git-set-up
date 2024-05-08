@@ -30,6 +30,8 @@ Usado para definir o endereço de e-mail que será associado a todos os commits 
 
 2. Adicione uma ssh-key do seu GitHub na sua máquina local:
 
+- Linux: 
+
 a. Abra o terminal no seu sistema operacional.
 
 b. Verifique se você já possui uma chave SSH gerada executando o seguinte comando: ls -al ~/.ssh. Se você já tiver uma chave SSH, você verá uma lista de arquivos com nomes como id_rsa e id_rsa.pub. Se você não tiver uma chave SSH, você verá uma mensagem de erro informando que o diretório ~/.ssh não existe ou está vazio.
@@ -55,6 +57,36 @@ k. Cole a chave SSH pública que você copiou anteriormente na área de transfer
 l. Clique em "Add SSH key" (Adicionar chave SSH).
 
 m. Agora, sua chave SSH do GitHub está adicionada à sua máquina local.
+
+Depois de adicionar sua chave SSH, você poderá se autenticar automaticamente ao interagir com o GitHub usando comandos como git push e git clone. Isso tornará o processo de trabalho com o GitHub mais conveniente e seguro.
+
+- Windows:
+
+a. Abra o Git Bash no seu computador com Windows.
+
+b. Verifique se você já possui uma chave SSH gerada executando o seguinte comando: ls -al ~/.ssh. Se você já tiver uma chave SSH, você verá uma lista de arquivos com nomes como id_rsa e id_rsa.pub. Se você não tiver uma chave SSH, você verá uma mensagem de erro informando que o diretório ~/.ssh não existe ou está vazio.
+
+c. Se você não tiver uma chave SSH, você precisará gerar uma nova. Para fazer isso, execute o seguinte comando: ssh-keygen -t rsa -b 4096 -C "seu-email@exemplo.com". Substitua "seu-email@exemplo.com" pelo seu endereço de e-mail associado à sua conta do GitHub. Pressione Enter para aceitar o local padrão do arquivo da chave e, em seguida, pressione Enter novamente para definir uma senha vazia.
+
+d. Agora, você precisa iniciar o agente SSH no seu computador com Windows. Execute o seguinte comando: eval "$(ssh-agent -s)".
+
+e. Em seguida, adicione sua chave SSH ao agente SSH executando o seguinte comando: ssh-add ~/.ssh/id_rsa.
+
+f. Agora, você precisa copiar sua chave SSH pública para a área de transferência. Execute o seguinte comando: clip < ~/.ssh/id_rsa.pub.
+
+g. Acesse sua conta do GitHub em um navegador da web e vá para as configurações do seu perfil.
+
+h. Na barra lateral esquerda, clique em "SSH and GPG keys" (Chaves SSH e GPG).
+
+i. Clique em "New SSH key" (Nova chave SSH).
+
+j. Dê um nome descritivo para a chave no campo "Title" (Título).
+
+k. Cole a chave SSH pública que você copiou anteriormente na área de transferência no campo "Key" (Chave).
+
+l. Clique em "Add SSH key" (Adicionar chave SSH).
+
+m. Agora, sua chave SSH do GitHub está adicionada ao seu computador com Windows.
 
 Depois de adicionar sua chave SSH, você poderá se autenticar automaticamente ao interagir com o GitHub usando comandos como git push e git clone. Isso tornará o processo de trabalho com o GitHub mais conveniente e seguro.
 
