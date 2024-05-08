@@ -30,7 +30,7 @@ Usado para definir o endereço de e-mail que será associado a todos os commits 
 
 2. Adicione uma ssh-key do seu GitHub na sua máquina local:
 
-- Linux: 
+- Linux/MacOS: 
 
 a. Abra o terminal no seu sistema operacional.
 
