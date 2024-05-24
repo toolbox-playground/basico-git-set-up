@@ -1,6 +1,6 @@
 {
   "name": "basico-git-set-up",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "![Toolbox Playground](img/toolbox-playground.png)",
   "main": "index.js",
   "scripts": {
